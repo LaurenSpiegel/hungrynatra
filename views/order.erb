@@ -1,0 +1,13 @@
+<div class="styled">
+<h2>Incoming Orders:</h2>
+
+
+<ul>
+  <% @orders.each do |order| %>
+  <li><%= order['appetizer'] + ', ' + order['entree'] + ', ' + order['dessert'] %></li>  
+  <% end %>
+</ul>
+
+  </div>
+
+
